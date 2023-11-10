@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farmacia Online - Carrito de Compras</title>
+    
+    <!--  enlaces a los archivos de Bootstrap CSS y JS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <style>
+        body {
+            background-color: #f8f9fa; /* Cambiar colores segun nuestras preferencias */
+            font-size: 18px; /* Aumenta el tamaño de fuente */
+        }
+
+        .container {
+            margin-top: 30px;
+        }
+        
+        .jumbotron {
+            background-color: #007BFF; /* Cambia el color del encabezado */
+            color: #fff;
+            text-align: center;
+            padding: 2rem; /* Aumenta el espacio alrededor del encabezado */
+        }
+
+        .table {
+            background-color: #fff; /* Cambia el color de fondo de la tabla */
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="jumbotron">
+        <h1 class="display-4">Bienvenido a la Farmacia en Línea</h1>
+        <p class="lead">Tu Carrito de Compras</p>
+    </div>
+
+    <div class="container">
+        <h2>Productos en el Carrito</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Medicamento</th>
+                    <th>Cantidad</th>
+                    <th>Precio Unitario</th>
+                    <th>Total</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Aqui estaran los productos seleccionados por los afiliados -->
+                <tr>
+                    <td>Nombre del Medicamento 1</td>
+                    <td>2</td>
+                    <td>$10.00</td>
+                    <td>$20.00</td>
+                </tr>
+                <!-- Puedes usar un bucle para mostrar todos los productos en el carrito -->
+            </tbody>
+        </table>
+
+        <p>Total del Carrito: $XX.XX</p>
+
+        <a class="btn btn-primary" href="#">Continuar con la Compra</a>
+
+        <p>¿Desea iniciar un proceso de compra anticipada para un medicamento no disponible?</p>
+        <a class="btn btn-success" href="#">Comprar Medicamento Agotado</a>
+
+        <p>¿Tiene una receta para uno de los medicamentos?</p>
+        <a class="btn btn-info" href="#">Subir Receta</a>
+    </div>
+</body>
+</html>
